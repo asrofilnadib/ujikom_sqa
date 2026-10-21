@@ -1,0 +1,101 @@
+[
+  {
+    "id": "TC-A-01",
+    "kak": "KAK-T03",
+    "jenis": "Otomatis / integrasi",
+    "expected": "Skema POS ada di database",
+    "actual": "52 tabel: products, tickets, stockcurrent ada",
+    "status": "Pass",
+    "severity": "-"
+  },
+  {
+    "id": "TC-A-02",
+    "kak": "KAK-T04",
+    "jenis": "Otomatis / stok",
+    "expected": "Stok headset berkurang setelah penjualan lab (20-1=19)",
+    "actual": "19",
+    "status": "Pass",
+    "severity": "-"
+  },
+  {
+    "id": "TC-I-01",
+    "kak": "KAK-T03,KAK-T05",
+    "jenis": "Integrasi",
+    "expected": "Pembayaran tunai tersimpan di DB",
+    "actual": "cash\t150000",
+    "status": "Pass",
+    "severity": "-"
+  },
+  {
+    "id": "TC-ST-01",
+    "kak": "KAK-T04",
+    "jenis": "Stress / kinerja",
+    "expected": "Kueri stok < 500 ms di lab",
+    "actual": "85.9 ms",
+    "status": "Pass",
+    "severity": "-"
+  },
+  {
+    "id": "TC-ST-02",
+    "kak": "KAK-T04",
+    "jenis": "Stress",
+    "expected": "10.000 pembacaan stok (BENCHMARK) selesai tanpa error",
+    "actual": "hasil=0 dalam 43 ms",
+    "status": "Pass",
+    "severity": "-"
+  },
+  {
+    "id": "TC-S-03",
+    "kak": "KAK-K01,KAK-D01",
+    "jenis": "Keamanan",
+    "expected": "Pengguna default memakai kata sandi bukan NULL",
+    "actual": "Administrator / NULL\nManager / NULL\nEmployee / NULL\nGuest / NULL",
+    "status": "Fail",
+    "severity": "Kritis"
+  },
+  {
+    "id": "TC-S-01",
+    "kak": "KAK-D01",
+    "jenis": "Keamanan / otorisasi",
+    "expected": "Ada peran Administrator dan Employee",
+    "actual": "0\tAdministrator role; 2\tEmployee role; 3\tGuest role; 1\tManager role",
+    "status": "Pass",
+    "severity": "-"
+  },
+  {
+    "id": "TC-F-05",
+    "kak": "KAK-T06",
+    "jenis": "Fungsional / otomatis",
+    "expected": "Ada tabel atau data penggajian karyawan",
+    "actual": "tidak ada tabel gaji/payroll/salary",
+    "status": "Fail",
+    "severity": "Mayor"
+  },
+  {
+    "id": "TC-F-04",
+    "kak": "KAK-T05,KAK-S02",
+    "jenis": "Fungsional / laporan",
+    "expected": "Data pemasukan dapat direkap per bulan dari DB",
+    "actual": "2026-10\t150000",
+    "status": "Pass",
+    "severity": "-"
+  },
+  {
+    "id": "TC-W-01",
+    "kak": "KAK-K01",
+    "jenis": "White box / keamanan",
+    "expected": "Kredensial DB tidak disimpan polos di unicentaopos.properties",
+    "actual": "/home/asrofil/unicentaopos.properties berisi db.password polos",
+    "status": "Fail",
+    "severity": "Mayor"
+  },
+  {
+    "id": "TC-S-04",
+    "kak": "KAK-K01",
+    "jenis": "Keamanan data (integritas kueri)",
+    "expected": "Pencarian nama produk dengan literal SQL ter-escape tidak merusak tabel",
+    "actual": "cocok=1; jumlah produk=5",
+    "status": "Pass",
+    "severity": "-"
+  }
+]
