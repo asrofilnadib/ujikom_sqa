@@ -1,4 +1,7 @@
 install/downloads/
+# Ekstrak .deb lokal; berkas runtime >100 MB (batas GitHub tanpa Git LFS)
+install/unicenta/
+.impeccable/
 docs/pdf/_html/
 __pycache__/
 *.pyc
