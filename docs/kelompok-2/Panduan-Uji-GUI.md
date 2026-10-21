@@ -152,7 +152,7 @@ Ini mengunci integritas DB (stok, pembayaran lab, skema). **Tetap tunjukkan uji 
 
 1. Buka `docs/kelompok-2/Matriks-Hasil-Pengujian.md` (atau PDF di `Documents/ujikom_sqa`).
 2. Untuk tiap TC yang kamu jalankan: perbarui **Actual** jika beda dari lab (mis. stok Mouse sekarang 29).
-3. Lampirkan screenshot ke folder `docs/bukti/` (boleh buat sendiri).
+3. Lampirkan screenshot ke folder [`docs/bukti/J.62SQA00.008.1-manual/`](../bukti/J.62SQA00.008.1-manual/) (unit **J.62SQA00.008.1**).
 
 ---
 

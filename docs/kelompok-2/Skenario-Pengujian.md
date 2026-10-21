@@ -2,11 +2,12 @@
 
 **Dokumen:** TP-XYZ-POS-001  
 **Acuan:** SQAP-XYZ-POS-001, RTM-XYZ-POS-001, ISO/IEC/IEEE 29119  
-**Unit:** J.625QA00.008.1, 009.1, 010.1  
+**Unit:** J.62SQA00.007.1, **J.62SQA00.008.1** (manual GUI), 009.1, 010.1  
 **SUT:** uniCenta oPOS 5.0 + MySQL 8.0 lokal (lab Toko XXX)  
 **Tanggal:** 21 Oktober 2026
 
-Lingkungan: Ubuntu 24.04, aplikasi `install/unicenta/opt/unicenta-opos/bin/unicenta-opos`, MySQL lokal `127.0.0.1:3306/unicentaopos` (user `asrofil`).
+Lingkungan: Ubuntu 24.04, aplikasi `install/unicenta/opt/unicenta-opos/bin/unicenta-opos`, MySQL lokal `127.0.0.1:3306/unicenta` (user `asrofil`).  
+**Bukti screenshot manual:** [docs/bukti/J.62SQA00.008.1-manual/](../bukti/J.62SQA00.008.1-manual/)
 
 ## 1. Skenario fungsional (black box)
 
