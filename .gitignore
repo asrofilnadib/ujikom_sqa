@@ -1,0 +1,5 @@
+install/downloads/
+docs/pdf/_html/
+__pycache__/
+*.pyc
+.DS_Store
