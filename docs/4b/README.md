@@ -2,6 +2,8 @@
 
 Tiga pertanyaan asesor setelah presentasi 4A. Satu file per pertanyaan — bisa dibaca sebelum wawancara.
 
+**DPL lengkap (13 pertanyaan FR.IA.07):** lihat [`../dpl/README.md`](../dpl/README.md).
+
 | File | Setelah presentasi | Pertanyaan |
 | --- | --- | --- |
 | [01-sumber-daya-tidak-memenuhi.md](01-sumber-daya-tidak-memenuhi.md) | Kelompok 1 (rencana SQAP) | Sumber daya SQA tidak memenuhi dalam perjalanan proyek |
