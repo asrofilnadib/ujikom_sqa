@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<title>Hasil pengujian kualitas — uniCenta oPOS vs KAK</title>
+<style>
+  @page { size: A4 landscape; margin: 12mm; }
+  body { font-family: "Liberation Sans", Arial, sans-serif; margin: 0; color: #1a1a1a; }
+  .slide { page-break-after: always; min-height: 170mm; padding: 14mm 16mm; }
+  .slide:last-child { page-break-after: auto; }
+  h1 { font-size: 22pt; margin: 0 0 8mm; line-height: 1.25; }
+  h2 { font-size: 16pt; margin: 0 0 6mm; color: #1f4e79; }
+  p, li, td { font-size: 13pt; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ccc; padding: 3mm; text-align: left; }
+  th { background: #1f4e79; color: #fff; }
+  .fail { color: #8b0000; font-weight: 700; }
+  .kicker { font-size: 12pt; color: #1f4e79; }
+</style>
+</head>
+<body>
+<section class="slide">
+  <div class="kicker">Kelompok 2 · SQA Development · 5 menit</div>
+  <h1>Hasil uji uniCenta vs KAK</h1>
+  <p>Lingkungan 21 Oktober 2026: Ubuntu 24.04, MySQL 8.0 lokal port 3306, data dummy toko elektronik.</p>
+  <p>Verifikasi tahap: produk jadi dapat diuji, tetapi jejak waterfall vendor <strong>tidak lengkap</strong>. Verification tetap jalan sesuai kriteria masuk SQAP.</p>
+  <p>21 kasus (manual + otomatis + white box + keamanan). Ringkasan defect: 1 kritis, 6 mayor terbuka.</p>
+</section>
+<section class="slide">
+  <h2>Yang lulus</h2>
+  <table>
+    <tr><th>Kebutuhan</th><th>Bukti</th></tr>
+    <tr><td>T01 POS menggantikan Excel</td><td>Aplikasi native start, JDBC_OK</td></tr>
+    <tr><td>T03 transaksi di database</td><td>52 tabel; tiket lab tersimpan</td></tr>
+    <tr><td>T04 stok real time</td><td>Headset 20 → 19 setelah 1 penjualan</td></tr>
+    <tr><td>D01 peran</td><td>Administrator, Manager, Employee, Guest</td></tr>
+    <tr><td>Integrasi / stress</td><td>cash 150000; BENCHMARK 10k stok 125 ms</td></tr>
+  </table>
+</section>
+<section class="slide">
+  <h2>Yang gagal — jangan diluluskan diam-diam</h2>
+  <table>
+    <tr><th>ID</th><th>Temuan</th><th>Keparahan</th></tr>
+    <tr><td>T06</td><td class="fail">Tidak ada modul/tabel gaji (DEF-01)</td><td>Mayor / wajib KAK</td></tr>
+    <tr><td>K01 / D01</td><td class="fail">Semua user default password NULL (DEF-02)</td><td>Kritis</td></tr>
+    <tr><td>K01</td><td class="fail">db.password polos di properties (DEF-03)</td><td>Mayor</td></tr>
+    <tr><td>T05 / S02</td><td>Pemasukan ada; pengeluaran otomatis tidak lengkap</td><td>Mayor</td></tr>
+    <tr><td>D02–D05</td><td>Manual bergambar &amp; garansi 3 bulan tidak ada</td><td>Mayor</td></tr>
+  </table>
+  <p>Gerbang rilis SQAP: <span class="fail">tidak lulus</span> (ada kritis + T06 Fail).</p>
+</section>
+</body>
+</html>

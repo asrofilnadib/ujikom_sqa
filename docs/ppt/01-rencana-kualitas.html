@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<title>Rencana Penjaminan Kualitas — POS Toko XXX</title>
+<style>
+  @page { size: A4 landscape; margin: 12mm; }
+  body { font-family: "Liberation Sans", Arial, sans-serif; margin: 0; color: #1a1a1a; }
+  .slide { page-break-after: always; min-height: 170mm; padding: 14mm 16mm; }
+  .slide:last-child { page-break-after: auto; }
+  h1 { font-size: 22pt; margin: 0 0 8mm; line-height: 1.25; }
+  h2 { font-size: 16pt; margin: 0 0 6mm; color: #1f4e79; }
+  p, li, td { font-size: 14pt; }
+  .meta { color: #555; font-size: 12pt; margin-bottom: 10mm; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ccc; padding: 4mm 3mm; text-align: left; vertical-align: top; }
+  th { background: #1f4e79; color: #fff; }
+  .kicker { font-size: 12pt; color: #1f4e79; }
+</style>
+</head>
+<body>
+<section class="slide">
+  <div class="kicker">Kelompok 1 · SQA Pre Development · 10 menit</div>
+  <h1>Rencana mutu POS Toko XXX</h1>
+  <p class="meta">Organisasi XYZ · uniCenta oPOS sebagai kandidat produk · 21 Oktober 2026<br/>Skema SS-LSP.UEU-002-2020 · IEEE 730 · ISO 25010 · ISO 12207 · ISO/IEC/IEEE 29119</p>
+  <p>SQA tidak mengganti waterfall di KAK. SQA menempelkan gerbang mutu di setiap akhir fase, dengan ID kebutuhan yang sama sampai ke kasus uji.</p>
+</section>
+<section class="slide">
+  <h2>1. Metodologi dan kerangka</h2>
+  <table>
+    <tr><th>Lapisan</th><th>Standar</th><th>Dipakai untuk</th></tr>
+    <tr><td>Rencana SQA</td><td>IEEE 730</td><td>SQAP, peran, catatan</td></tr>
+    <tr><td>Siklus hidup</td><td>ISO 12207 + waterfall KAK</td><td>Gerbang Requirements sampai Maintenance</td></tr>
+    <tr><td>Mutu produk</td><td>ISO 25010</td><td>Fungsi, stok, keamanan, usability</td></tr>
+    <tr><td>Pengujian</td><td>ISO 29119</td><td>Skenario, matriks, selesai uji</td></tr>
+  </table>
+  <p>Independensi: SQA tidak merangkap programmer.</p>
+</section>
+<section class="slide">
+  <h2>2. Lingkup produk dan proses</h2>
+  <p><strong>Wajib lulus:</strong> ganti Excel (T01), catat transaksi ke DB (T02–T03), stok real time (T04), laporan pemasukan/pengeluaran bulanan (T05/S02), <strong>gaji karyawan (T06)</strong>, peran karyawan/admin (D01).</p>
+  <p><strong>Proses:</strong> tidak ada fase tumpang tindih (KAK-W). Exit criteria tertulis. Dokumentasi, manual bergambar, garansi 3 bulan termasuk lingkup.</p>
+  <p><strong>Di luar lingkup:</strong> hardware printer, toko daring, sertifikasi ISO organisasi.</p>
+</section>
+<section class="slide">
+  <h2>3. Pelaksanaan 45 hari dan RACI</h2>
+  <table>
+    <tr><th>Minggu</th><th>Fase</th><th>Keluaran SQA</th></tr>
+    <tr><td>1</td><td>Requirements</td><td>SQAP, RTM, laporan pendahuluan</td></tr>
+    <tr><td>2–3</td><td>Design</td><td>Review arsitektur/UI/data</td></tr>
+    <tr><td>4–6</td><td>Implementation</td><td>Build lab, cek rahasia</td></tr>
+    <tr><td>7–8</td><td>Verification</td><td>Uji + defect</td></tr>
+    <tr><td>9 + 3 bln</td><td>Serah terima / garansi</td><td>UAT, manual, regresi</td></tr>
+  </table>
+  <p>PM akuntabel rilis. SQA responsible uji. Pemilik Toko XXX memutus serah terima.</p>
+</section>
+<section class="slide">
+  <h2>4. Risiko, perubahan, DoD</h2>
+  <p><strong>Risiko tertinggi:</strong> gaji tidak diimplementasi (R01), stok salah (R02), laporan tidak otomatis (R03), bocor data (R04), waterfall vs change (R05).</p>
+  <p><strong>Perubahan:</strong> CCB (PM, Designer, SQA, pemilik). Impact analysis, regresi, versi. Garansi 3 bulan: defect kritis 5 hari kerja.</p>
+  <p><strong>Definition of Done:</strong> 100% kasus wajib dieksekusi, 0 defect kritis, deliverable D02–D05 ada. Tanpa itu produk tidak dirilis.</p>
+</section>
+</body>
+</html>

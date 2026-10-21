@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<title>Rekomendasi perbaikan dan sistem pengujian</title>
+<style>
+  @page { size: A4 landscape; margin: 12mm; }
+  body { font-family: "Liberation Sans", Arial, sans-serif; margin: 0; color: #1a1a1a; }
+  .slide { page-break-after: always; min-height: 170mm; padding: 14mm 16mm; }
+  .slide:last-child { page-break-after: auto; }
+  h1 { font-size: 22pt; margin: 0 0 8mm; line-height: 1.25; }
+  h2 { font-size: 16pt; margin: 0 0 6mm; color: #1f4e79; }
+  p, li, td { font-size: 13pt; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ccc; padding: 3mm; text-align: left; }
+  th { background: #1f4e79; color: #fff; }
+  .kicker { font-size: 12pt; color: #1f4e79; }
+</style>
+</head>
+<body>
+<section class="slide">
+  <div class="kicker">Kelompok 3 · SQA Post Development · 5 menit</div>
+  <h1>Rekomendasi ke stakeholder</h1>
+  <p>Kesesuaian: kasir, stok, dan DB <strong>ada</strong>. Gaji, kerahasiaan, manual, garansi <strong>tidak memenuhi KAK</strong>.</p>
+  <p>SQA tidak merekomendasikan serah terima penuh sekarang.</p>
+</section>
+<section class="slide">
+  <h2>Korektif (perbaiki produk)</h2>
+  <table>
+    <tr><th>Kode</th><th>Tindakan</th><th>Jika tidak</th></tr>
+    <tr><td>KOR-01</td><td>Wajibkan password; tutup Guest</td><td>Admin bebas diakses di kasir</td></tr>
+    <tr><td>KOR-02</td><td>Modul gaji atau payroll terpisah + adendum</td><td>T06 gagal; Excel tetap</td></tr>
+    <tr><td>KOR-03</td><td>Jangan simpan password DB polos</td><td>Bocor seluruh database</td></tr>
+    <tr><td>KOR-04</td><td>Laporan pengeluaran + rekap bulanan</td><td>S02 tidak tercapai</td></tr>
+    <tr><td>KOR-05/06</td><td>Manual bergambar Indonesia + garansi 3 bulan</td><td>D04/K03 gagal</td></tr>
+  </table>
+</section>
+<section class="slide">
+  <h2>Preventif dan sistem uji ke depan</h2>
+  <ul>
+    <li>PRE-01: gap analysis fitur vs KAK sebelum Design ditutup (akar T06).</li>
+    <li>PRE-02: DoD = 100% T wajib Pass, 0 kritis.</li>
+    <li>PRE-03: checklist keamanan di gerbang Implementation.</li>
+    <li>Regresi: pertahankan <code>tests/run_sqa_tests.py</code>; tambah checklist GUI Swing (bukan Selenium palsu).</li>
+    <li>UAT pemilik memakai skenario T01–T06, bukan menu vendor Inggris.</li>
+  </ul>
+  <p><strong>Opsi:</strong> (1) perbaiki dulu — disarankan; (2) terima terbatas dengan waiver T06, tetap KOR-01; (3) tolak jika seluruh KAK dituntut tanpa adendum.</p>
+</section>
+</body>
+</html>
