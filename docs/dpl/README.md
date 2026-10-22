@@ -3,7 +3,7 @@
 **Skema:** Software Quality Assurance · **SS-LSP.UEU-002-2020**  
 **Proyek contoh jawaban:** Sistem Kasir POS Toko XXX · uniCenta oPOS 5.0 · Organisasi XYZ  
 
-Setiap file berisi **pertanyaan asesor**, **KUK**, dan **Jawaban Asesi** (**satu paragraf**) untuk ditulis atau diparafrase ke lembar DPL. Baca sebelum wawancara setelah presentasi 4A.
+Setiap file berisi **pertanyaan**, **KUK**, dan **Jawaban Asesi** berupa **bullet berisi kalimat rapi**; singkatan teknis dilengkapi **makna/ perluasan** (contoh: SQA = *Software Quality Assurance*). Parafrase ke lembar DPL saat wawancara. Baca setelah presentasi 4A.
 
 | No. | File | KUK (lembar) | Topik |
 | --- | --- | --- | --- |

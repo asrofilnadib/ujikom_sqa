@@ -35,6 +35,7 @@ mysql -u asrofil -h 127.0.0.1 -e "CREATE DATABASE unicentaopos CHARACTER SET utf
 python3 install/scripts/expand_and_load_schema.py /tmp/unicenta-create-expanded.sql
 mysql -u asrofil -h 127.0.0.1 unicentaopos < /tmp/unicenta-create-expanded.sql
 mysql -u asrofil -h 127.0.0.1 unicentaopos < install/scripts/seed_toko_xxx.sql
+./install/scripts/apply-seed-transaksi-alur.sh all   # produk + 3 transaksi + tutup kasir
 ```
 
 Skema: skrip resmi `MySQL-create.sql` dengan placeholder `$FILE{}` diekspansi oleh `install/scripts/expand_and_load_schema.py`.  
