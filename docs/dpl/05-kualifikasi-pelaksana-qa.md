@@ -6,4 +6,8 @@
 
 ## Jawaban Asesi
 
-Pelaksana SQA harus memahami KAK dan standar acuan (IEEE 730, ISO 29119, ISO 25010), mampu menyusun serta mengeksekusi skenario dan matriks dengan ketertelusuran RTM, tetap independen dari programmer, memiliki kompetensi teknis sesuai lingkup proyek—untuk POS berarti operasi aplikasi kasir, kueri SQL dasar, dan review keamanan konfigurasi—serta mampu melaporkan temuan ke PM dan pemilik dengan bahasa yang jelas. Keluaran yang dibuktikan: SQAP, skenario, matriks hasil, defect log, dan rekomendasi stakeholder, sesuai peran SQA pada proyek uniCenta vs KAK Toko XXX.
+- Pelaksana memahami **KAK** (*Kerangka Acuan Kerja*) dan standar acuan, antara lain **IEEE 730** (standar proses **SQA**), **ISO/IEC/IEEE 29119** (standar pengujian), dan **ISO/IEC 25010** (model mutu produk).
+- Pelaksana mampu menyusun dan mengeksekusi skenario serta matriks dengan ketertelusuran **RTM** (*Requirements Traceability Matrix*).
+- Pelaksana menjaga **independensi** dari programmer dan melaporkan temuan kepada **PM** (*Project Manager*) serta pemilik Toko XXX.
+- Kompetensi teknis disesuaikan lingkup proyek, termasuk operasi aplikasi kasir desktop, kueri **SQL** dasar, dan tinjauan keamanan berkas konfigurasi.
+- Keluaran yang dibuktikan pada asesmen meliputi **SQAP**, skenario, matriks hasil, defect log, dan rekomendasi pada proyek **uniCenta oPOS**.

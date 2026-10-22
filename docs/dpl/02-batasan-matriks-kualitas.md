@@ -6,4 +6,8 @@
 
 ## Jawaban Asesi
 
-Batas minimum dan maksimum beserta toleransi membuat penilaian mutu objektif dan sama untuk semua penguji, sehingga keputusan rilis tidak subjektif. Minimum adalah syarat lulus—misalnya 100% kasus wajib KAK dieksekusi dan nol defect kritis; maksimum adalah batas kinerja yang masih diterima—misalnya waktu kueri stok di bawah 500 ms; toleransi adalah deviasi yang masih boleh sebelum status berubah—misalnya stok harus turun tepat satu unit setelah satu penjualan. Di matriks TR-XYZ-POS-001 nilai expected dan actual dibandingkan dengan aturan itu agar asesor dan stakeholder bisa audit buktinya.
+- Batas **minimum**, **maksimum**, dan **toleransi** membuat penilaian mutu **objektif** dan konsisten, sehingga keputusan rilis tidak bergantung pada penilaian subjektif penguji.
+- **Minimum** adalah syarat lulus, misalnya seratus persen kasus wajib **KAK** dieksekusi dan nol **defect** (*cacat perangkat lunak*) berkeparahan kritis.
+- **Maksimum** adalah batas kinerja yang masih diterima, misalnya waktu kueri stok di bawah lima ratus milidetik pada uji stress.
+- **Toleransi** adalah deviasi yang masih diperbolehkan sebelum status berubah, misalnya stok harus turun tepat satu unit setelah satu penjualan diuji.
+- Nilai tersebut diisi di **matriks hasil uji** TR-XYZ-POS-001 dengan kolom Expected, Actual, dan status Pass, Fail, atau Sebagian.

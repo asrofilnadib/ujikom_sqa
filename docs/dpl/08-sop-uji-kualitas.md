@@ -6,4 +6,8 @@
 
 ## Jawaban Asesi
 
-SOP uji mengacu ISO/IEC/IEEE 29119 dan SQAP: rencana uji (skenario) disetujui PM, setiap kasus dieksekusi dengan langkah, expected, actual, dan bukti, hasil dicatat di matriks dan defect log, lalu direview agar tidak ada Pass tanpa eksekusi. Memastikannya dengan checklist Verification, sampel review PM, membandingkan matriks dengan hasil otomatis dan screenshot GUI, serta walkthrough alur kasir; jika kasus wajib KAK dilewati, itu dicatat sebagai ketidaksesuaian proses. Pada proyek POS, urutannya smoke aplikasi, skrip `run_sqa_tests.py`, uji manual GUI, lalu keputusan gerbang sesuai Definition of Done SQAP.
+- **SOP** (*Standard Operating Procedure*) uji mengacu **ISO/IEC/IEEE 29119** dan **SQAP** (*Software Quality Assurance Plan*): rencana uji disetujui **PM**, setiap kasus memiliki langkah, expected, actual, dan bukti.
+- Matriks diisi secara jujur; status Pass tidak boleh diberikan tanpa eksekusi nyata.
+- Pemastian dilakukan melalui checklist fase **Verification**, review sampel oleh **PM**, dan pencocokan berkas **JSON** otomatis serta screenshot **GUI** (*Graphical User Interface*) dengan matriks.
+- Urutan praktis di lab: smoke test aplikasi, menjalankan `run_sqa_tests.py`, uji manual kasir, pengisian defect, lalu penilaian **DoD** (*Definition of Done* — definisi selesai) pada gerbang rilis.
+- Apabila kasus wajib **KAK** dilewati, ketidaksesuaian proses dicatat dan dilaporkan, bukan disembunyikan.

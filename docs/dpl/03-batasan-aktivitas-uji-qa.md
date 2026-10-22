@@ -6,4 +6,8 @@
 
 ## Jawaban Asesi
 
-Batasan aktivitas mengatur lingkung (apa yang diuji), waktu (fase Verification), sumber daya, dan teknik yang dipakai. Pada proyek POS Toko XXX yang diuji: fungsional KAK-T01–T06, integrasi POS–MySQL, keamanan defensif K01, white box konfigurasi, dan stress ringan stok; di luar lingkup eksploitasi ofensif, data produksi riil, dan pengembangan POS dari nol. Uji dimulai setelah build lab siap, SQA independen dari programmer, dan status Pass/Fail hanya dengan bukti screenshot, kueri SQL, atau JSON otomatis; jika otomatis GUI tidak realistis untuk aplikasi Swing, otomatis dibatasi ke skrip SQL/Python dan GUI diuji manual terstruktur sesuai skenario.
+- **Lingkup produk** mencakup kebutuhan fungsional **KAK-T01** sampai **T06**, integrasi aplikasi **POS** (*Point of Sale* — kasir) dengan **MySQL**, uji keamanan defensif, dan tinjauan **white box** (uji melalui struktur data dan konfigurasi); di luar lingkup ada eksploitasi ofensif dan data produksi riil pelanggan.
+- **Lingkup waktu** mengikuti fase **Verification** (verifikasi) pada jadwal **SQAP** (*Software Quality Assurance Plan*) empat puluh lima hari kerja.
+- **Peran SQA** (*Software Quality Assurance*) harus independen dari programmer, dan status Pass atau Fail hanya boleh diisi jika ada bukti berupa screenshot, kueri **SQL** (*Structured Query Language*), atau berkas **JSON** hasil otomatis.
+- **Teknik GUI** pada aplikasi **Swing** (antarmuka desktop Java) dilakukan manual terstruktur; otomatisasi dibatasi pada skrip **SQL** dan **Python** bila otomatisasi layar tidak realistis di lab.
+- Uji dimulai setelah build lab siap, basis data dummy Toko XXX tersedia, dan skenario pengujian disetujui **PM** (*Project Manager* — manajer proyek).

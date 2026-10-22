@@ -6,4 +6,8 @@
 
 ## Jawaban Asesi
 
-Acuannya ISO/IEC/IEEE 29119 dan praktik umum ISTQB: uji unit mengisolasi komponen terkecil, uji integrasi menguji antarmuka antar komponen. Best practice yang saya terapkan: langkah jelas di skenario, data uji terkontrol (seed Toko XXX), expected dari KAK bukan dari asumsi kode, dan verifikasi konsistensi data setelah transaksi. Pada uniCenta, integrasi POS–MySQL diuji lewat pembayaran cash tersimpan di `payments` dan stok turun di `stockcurrent` (TC-I-01, TC-I-02), sementara unit logika dalam kode vendor terbatas sehingga fokus SQA pada integrasi dan uji sistem end-to-end kasir.
+- Acuan utama adalah **ISO/IEC/IEEE 29119** (standar pengujian perangkat lunak) dan praktik umum **ISTQB** (*International Software Testing Qualifications Board* — kerangka sertifikasi pengujian).
+- **Uji unit** mengisolasi komponen terkecil yang dapat diuji; pada produk vendor tertutup, cakupannya terbatas dibanding **uji integrasi**.
+- **Uji integrasi** memverifikasi antarmuka antara aplikasi **POS**, konektor **JDBC** (*Java Database Connectivity*), dan **MySQL**.
+- Praktik baik yang diterapkan: langkah uji jelas di skenario, data uji terkontrol (seed Toko XXX), expected diambil dari **KAK**, dan konsistensi data diverifikasi setelah transaksi.
+- Contoh pada proyek: **TC-I-01** memastikan pembayaran tercatat di tabel `payments`; **TC-I-02** memastikan stok di `stockcurrent` berkurang setelah penjualan.

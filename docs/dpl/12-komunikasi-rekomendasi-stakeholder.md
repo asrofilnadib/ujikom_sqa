@@ -6,4 +6,7 @@
 
 ## Jawaban Asesi
 
-Rekomendasi disampaikan lewat dokumen REC-XYZ-POS-001, presentasi Kelompok 3, dan rapat serah terima kepada pemilik Toko XXX, PM Organisasi XYZ, serta tim teknis. Isinya ringkasan kesesuaian KAK, defect kritis dan mayor, rekomendasi korektif KOR dan preventif PRE dengan dampak bisnis jika diabaikan, serta opsi keputusan: perbaiki dulu, terima terbatas dengan waiver tertulis, atau tolak serah terima. Bahasa disesuaikan audiens—pemilik fokus dampak operasional, PM fokus jadwal dan biaya—dengan bukti matriks dan screenshot, tanpa menyembunyikan Fail seperti T06 atau password kosong.
+- **Stakeholder** (*pihak berkepentingan*) utama adalah pemilik Toko XXX, **PM** (*Project Manager*) Organisasi XYZ, dan tim teknis; komunikasi dilakukan melalui dokumen **REC-XYZ-POS-001**, presentasi Kelompok 3, dan rapat serah terima.
+- Isi komunikasi memuat ringkasan kesesuaian **KAK**, daftar **defect** kritis dan mayor, rekomendasi **KOR** (*korektif*) dan **PRE** (*preventif*) beserta dampak bisnis jika diabaikan, serta opsi keputusan: perbaiki dulu, terima terbatas dengan **waiver**, atau tolak serah terima.
+- Bahasa disesuaikan audiens: pemilik menerima penjelasan dampak operasional toko; **PM** menerima penjelasan jadwal, biaya, dan prioritas perbaikan.
+- Semua rekomendasi dilengkapi bukti matriks dan tidak menyembunyikan kegagalan fungsi wajib seperti **KAK-T06** (gaji) atau temuan keamanan kritis.

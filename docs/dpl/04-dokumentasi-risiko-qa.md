@@ -6,4 +6,8 @@
 
 ## Jawaban Asesi
 
-Faktor risiko didokumentasikan dalam register risiko SQAP berisi ID, pemicu, skor dampak×probabilitas, mitigasi preventif, dan kontingensi korektif, lalu dihubungkan ke ID KAK. Jika risiko terjadi, ditambahkan ke defect log—contoh R01 tidak ada gaji menjadi DEF-01 dan TC-F-05 Fail. Dokumentasi dilengkapi laporan mingguan KAK-P02, matriks uji sebagai bukti kontrol berjalan, dan catatan CCB bila scope berubah, sehingga jejak audit menunjukkan risiko dipantau dan ditindak, bukan hanya dicatat di awal proyek.
+- Risiko dicatat dalam **register risiko SQAP** (*Software Quality Assurance Plan*) berisi identifikasi, pemicu, skor dampak dikali probabilitas, mitigasi preventif, kontingensi korektif, dan kaitan ke ID **KAK** (*Kerangka Acuan Kerja*).
+- Apabila risiko terjadi, temuan dipindahkan ke **defect log** (*log cacat*), contohnya risiko R01 modul gaji menjadi **DEF-01** pada uji **KAK-T06**.
+- Bukti bahwa kontrol berjalan ditunjukkan melalui kasus uji di matriks dan **laporan mingguan KAK-P02** (*pelaporan proyek*).
+- Perubahan ruang lingkup wajib melalui **CCB** (*Change Control Board* — badan pengendali perubahan) dan tidak boleh mengubah status uji secara diam-diam.
+- Seluruh catatan bersifat tertulis agar jejak audit dapat diperiksa asesor.
